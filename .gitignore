@@ -1,0 +1,5 @@
+.sync*
+.DS_Store
+/.idea
+/*.iml
+/unused

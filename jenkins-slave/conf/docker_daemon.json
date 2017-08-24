@@ -1,0 +1,12 @@
+{
+    "registry-mirrors": ["HTTP://IP:PORT"],
+    "insecure-registries": ["IP:PORT"],
+    "log-driver": "json-file",
+    "log-opts": {
+      "labels" : "app",
+      "env" : "os",
+      "max-file" : "3",
+      "max-size": "20m"
+        } 
+}
+
