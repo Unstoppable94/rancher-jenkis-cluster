@@ -51,8 +51,8 @@ fi
 if [ ! -z "$SLAVE_EXECUTORS" ]; then
   JENKINS_PARAMS="$JENKINS_PARAMS -executors $SLAVE_EXECUTORS"
 fi
-if [ ! -z "$SERVICE_URL" ]; then
-    JENKINS_PARAMS="$JENKINS_PARAMS -master $SERVICE_URL"
+if [ ! -z "$JENKINS_MASTER" ]; then
+    JENKINS_PARAMS="$JENKINS_PARAMS -master $JENKINS_MASTER"
 fi
 
 
