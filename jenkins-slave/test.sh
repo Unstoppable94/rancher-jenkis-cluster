@@ -28,5 +28,7 @@ docker run --rm -it --privileged -e JENKINS_MASTER=http://jenkins-master:8080 \
 -e ENVIRONMENT="1a5" \
 -e SLAVE_EXECUTORS=1 \
 -e WINGARDEN_URL="http://192.168.101.2:8080" \
--v `pwd`/run.sh:/run.sh \
-10.0.2.50/wh-cicd/jenkis-slave     bash
+-v `pwd`/conf/run.sh:/run.sh \
+10.0.2.50/wh-cicd/jenkis-slave:20170915     bash
+WINGARDEN_URL
+WINGARDEN_URL

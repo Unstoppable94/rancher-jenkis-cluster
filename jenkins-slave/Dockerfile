@@ -34,7 +34,9 @@ RUN mkdir -p /var/spool/cron/crontabs && mkdir -p  /root/.rancher \
     && cp ./conf/docker_config.json   /root/.docker/config.json \
     && cp ./conf/docker_daemon.json   /etc/docker/daemon.json 
 
-
-VOLUME /var/lib/docker
+COPY jq /usr/bin/jq
+COPY m2 /root/.m2
+VOLUME /var/lib/docker /workspace
+RUN git clone http://xiehq:acd12345@10.0.2.50:180/wingrow/jenkins-groovy && cp ./jenkins-groovy/rancher.sh /usr/bin/rancher.sh && chmod +x /usr/bin/rancher.sh
 CMD ["/conf/run.sh"]
 
