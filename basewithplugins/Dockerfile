@@ -83,5 +83,5 @@ run-condition                                \
 conditional-buildstep                        \
 parameterized-trigger                        \
 build-pipeline-plugin                        \
-pipeline-utility-steps.ji                    \
+pipeline-utility-steps                      \
 swarm
