@@ -1,4 +1,4 @@
-FROM jenkins:2.46.3
+FROM jenkins:2.60.3
 RUN mkdir -p /usr/share/jenkins/ref/plugins/
 RUN rm -rf   /usr/share/jenkins/ref/plugins/github-branch-source.lock
 RUN /usr/local/bin/install-plugins.sh docker-slaves \
