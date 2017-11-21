@@ -1,4 +1,4 @@
-FROM wingrow/jenkins-withplugins:20170817
+FROM wingrow/jenkins-withplugins:20171121
 USER root 
 ADD  jenkins_home /jenkins_home
 
